@@ -53,12 +53,13 @@ class FitGirl:
 
             results = re.findall(r'<h1 class="entry-title"><a href="(.+?)" rel="bookmark">(.+?)</a></h1>', response.text)
             first_one = results[0][0]
+            title_name = results[0][1]
             response = httpx.get(first_one)
 
             results = re.findall(r'<h3>Download Mirrors</h3>(.+?)</ul>', response.text, re.DOTALL)
             results = re.findall(r'<li><a href="(.+?)" target="_blank" rel="noopener">(.+?)</a>', results[0])
 
-            json_results = {"status": "Success", "results": []}
+            json_results = {"status": "Success", "game": title_name, "results": []}
             for result in results:
                 json_results["results"].append({"url": result[0], "title": result[1]})
 
