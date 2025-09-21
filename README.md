@@ -1,3 +1,5 @@
+# Broken due to DDOS protection, might find a way to make this work in the future.
+
 # FitGirl Repacks API
 
 This is a Python API designed to interact with the FitGirl Repacks website (https://fitgirl-repacks.site/), a popular source for free game repacks. The API provides functionality to retrieve new posts, search for specific games, and obtain download links.
