@@ -1,4 +1,5 @@
-# Broken due to DDOS protection, might find a way to make this work in the future.
+# "Semi" Broken due to DDOS protection, might find a way to make this work in the future.
+### Firgirl repacks has cloudflare security on her website, this can be bypassed by completing the captcha once, and the script will work. Otherwise you might want to use [FlareSolver](https://github.com/FlareSolverr/FlareSolverr). I MIGHT add in a cloudflare bypass for this soon or automation to automaticly solve the captcha when needed in the background.
 
 # FitGirl Repacks API
 
